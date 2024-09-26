@@ -1,0 +1,93 @@
+body {
+    background : #15171b;
+}
+
+@font-face {
+    font-family: 'ResidentEvil';
+    src: url('../fonts/ResidentEvil.eot');
+    src: url('../fonts/ResidentEvil.eot') format('embedded-opentype'),
+         url('../fonts/ResidentEvil.woff2') format('woff2'),
+         url('../fonts/ResidentEvil.woff') format('woff'),
+         url('../fonts/ResidentEvil.ttf') format('truetype'),
+         url('../fonts/ResidentEvil.svg#ResidentEvil') format('svg');
+}
+
+.calendar {
+    width: 1600px;
+    height: 900px;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 11px 0;
+}
+
+#calendar-video {
+    width: 1600px;
+    height: 900px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.evil-october {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "ResidentEvil";
+    color: #7b908f;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 4px 0 #617577, 0 10px 0 #161410;
+    letter-spacing: 15px;
+    font-size : 85px;
+}
+
+.calendar-month {
+    padding: 0;
+    margin: 0 15px 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.calendar-month li {
+    width: 180px;
+}
+
+.calendar-month img {
+    width: 180px;
+}
+
+.calendar-weeks {
+    display: flex;
+    gap: 36px 50px;
+    margin: 0 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.calendar-days {
+    width: 180px;
+    height: 120px;
+    position: relative;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.days-number {
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+    font-family: "ResidentEvil";
+    font-size : 30px;
+    width : 30px;
+    height: 30px;
+    border-radius: 45px;
+    background-color: #6d4b30;
+    color: #18100a;
+    border: 2px solid #18100a;
+    text-align: center;
+}
